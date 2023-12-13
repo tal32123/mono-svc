@@ -17,3 +17,8 @@ functions:
       - http:
           method: ANY
           path: '{proxy+}'
+
+custom:
+  serverless-offline:
+    httpPort: 3000  # Optional: specify the port you want to use
+    noPrependStageInUrl: true  # Do not prepend the stage in the URL
